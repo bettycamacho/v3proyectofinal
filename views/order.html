@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Zapatos - Pedidos</title>
+</head>
+<body>
+  <header>
+    <h1>Formulario de Pedido</h1>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/about">Acerca de</a>
+      <a href="/products">Productos</a>
+      <a href="/order">Pedidos</a>
+    </nav>
+  </header>
+  <main>
+    <section class="container">
+      <form action="/order" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="product">Producto:</label>
+        <select id="product" name="product" required>
+          <option value="deportivo">Zapato Deportivo</option>
+          <option value="formal">Zapato Formal</option>
+        </select>
+        
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required>
+        
+        <label for="design">Diseño:</label>
+        <input type="text" id="design" name="design" required>
+        
+        <label for="price">Precio:</label>
+        <input type="number" id="price" name="price" required>
+        
+        <button type="submit">Enviar Pedido</button>
+      </form>
+      <div class="navigation-links">
+        <p><a href="/">Inicio</a></p>
+        <p><a href="/about">Acerca de</a></p>
+        <p><a href="/products">Productos</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Zapatos Tesla SAS</p>
+  </footer>
+</body>
+</html>
